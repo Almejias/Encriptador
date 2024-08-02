@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    background-color: #E5E5E5;
+    font-family: "Inter", sans-serif;
+}
+
+
+body {
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+}
+
+.container__izquierda__text {
+    border: none;
+}
+
+.container__izquierda__buttons {
+    text-align: center;
+}
+
+.container__izquierda__button__encriptar {
+    background-color: #0A3871;
+    color: #D8DFE8;
+    border-radius: 24px;
+    border: 2px solid  #0A3871;
+    width: 328px;
+    height: 67px;
+}
+
+.container__izquierda__button__desencriptar {
+    background-color: #D8DFE8;
+    color: #0A3871;
+    border-radius: 24px;
+    border: 2px solid  #0A3871;
+    width: 328px;
+    height: 67px;
+
+}
+
+
+.container__derecha {
+    background-color:#f6f6f6;
+}
+
+.container__derecha__msj {
+    font-weight: 600;
+}
