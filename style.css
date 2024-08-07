@@ -15,8 +15,8 @@ body {
 
 .container {
     display: flex;
-    border: solid 2px red;
     height: 90%;
+    margin-left: 6rem;
 }
 
 .container__izquierda {
@@ -40,20 +40,19 @@ body {
 .container__izquierda__button__encriptar {
     background-color: #0A3871;
     color: #D8DFE8;
-    border-radius: 24px;
+    border-radius: 1.5rem;
     border: 2px solid  #0A3871;
-    width: 50%;
-    height: 67px;
+    padding: 1rem 2rem;
+    width: 20rem;
 }
 
 .container__izquierda__button__desencriptar {
     background-color: #D8DFE8;
     color: #0A3871;
-    border-radius: 24px;
+    border-radius: 1.5rem;
     border: 2px solid  #0A3871;
-    width: 50%;
-    height: 67px;
-
+    padding: 1rem 2rem;
+    width: 20rem;
 }
 
 
@@ -63,13 +62,20 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border-radius: 2rem;
 }
 
 .container__derecha__imagen{
-    width: 50%;
+    width: 80%;
+    background-color: #f6f6f6;
 }
 
 .container__derecha__msj {
     font-weight: 600;
     text-align: center;
+    background-color: #f6f6f6;
+}
+
+.footer {
+    margin-left: 6rem;
 }
