@@ -63,6 +63,7 @@ body {
     align-items: center;
     justify-content: center;
     border-radius: 2rem;
+    width: 80%;
 }
 
 .container__derecha__imagen{
