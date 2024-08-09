@@ -1,12 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+:root{
+    --color-primario:#E5E5E5;
+    --color-secundario:#f6f6f6;
+    --color-terciario:#22d4fd;
+    --color-hover:#272727;
+
+    --fuente-monserrat:"montserrat", sans-serif;
+    --fuente-krona:"Krona One", sans-serif;
+}
+
+
 * {
-    background-color: #E5E5E5;
+    background-color: var(--color-primario);
     font-family: "Inter", sans-serif;
 }
 
 body {
-    height: 90vh;
+    height: 95vh;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -15,7 +26,7 @@ body {
 
 .container {
     display: flex;
-    height: 90%;
+    height: 95%;
     margin-left: 6rem;
 }
 
@@ -29,6 +40,8 @@ body {
 
 .container__izquierda__text {
     border: none;
+    font-family: "Inter", sans-serif;
+
 }
 
 .container__izquierda__buttons {
@@ -61,14 +74,26 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 2rem 0rem;
     border-radius: 2rem;
     width: 80%;
+    box-shadow: 2px 1px 3px rgba(0, 0, 0, 0.2);
 }
+
+.container__derecha__contenido {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #f6f6f6;
+}
+
 
 .container__derecha__imagen{
     width: 80%;
     background-color: #f6f6f6;
+    margin: 2rem 0rem 0rem;
 }
 
 .container__derecha__msj {
@@ -77,6 +102,43 @@ body {
     background-color: #f6f6f6;
 }
 
+.container__derecha__button {
+    text-align: center;
+    gap: 24px;
+    display: flex;
+    background-color: #f6f6f6
+}
+
+.boton__derecha__copiar {
+    background-color: #f6f6f6;
+    color: #0A3871;
+    border-radius: 1.5rem;
+    border: 2px solid  #0A3871;
+    padding: 1rem 2rem;
+    width: 10rem;
+}
+
+
 .footer {
     margin-left: 6rem;
+}
+
+@media (max-width: 1200px) {
+
+    .header {
+        padding: 10%;
+    }
+
+    .header__menu {
+        justify-content: center;
+    }
+
+    .presentacion {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .presentacion__contenido {
+        width: fit-content;
+    }
 }
