@@ -1,5 +1,10 @@
-let listaVocales = [e = "enter", i = "imes", a = "ai", o = "ober", u = "ufat"];
+reiniciar();
 
+function reiniciar() {
+    document.getElementById("botonCopiar").style.display = "none";
+    document.getElementById("imagen1").style.display = "inline";
+    limpiarCaja();
+}
 
 function encriptar() {
     //Esconder imagen al presionar el boton
@@ -11,9 +16,17 @@ function encriptar() {
     let textoEncriptado = textoUsuario.replace(/e/g, "enter").replace(/i/g, "imes").replace(/a/g, "ai").replace(/o/g, "ober").replace(/u/g, "ufat");
     //Para cambiar el textoProcesado a el texto encriptado
     document.getElementById("textoProcesado").innerHTML = textoEncriptado;
+    //Mostrar boton de copiar
+    document.getElementById("botonCopiar").style.display = "inline";
     //Boton copiar
+    limpiarCaja()
 }
 
+
+
+function limpiarCaja() {
+    let valorCaja = document.querySelector('#valorUsuario').value = '';
+}
 
 function desencriptar() {
     //Tomando el texto encriptado del usuario
@@ -28,4 +41,10 @@ function desencriptar() {
 function copiar() {
     let textoProcesado = document.getElementById('textoProcesado').innerHTML;
         navigator.clipboard.writeText(textoProcesado)
+    limpiarCajaEncriptado("Ningún mensaje fue encontrado")
+    reiniciar()
+}
+
+function limpiarCajaEncriptado(texto="") {
+    let valorCaja = document.querySelector('#textoProcesado').innerHTML = texto;
 }

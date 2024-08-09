@@ -9,7 +9,7 @@
 <body>
     <main class="container">
         <section class="container__izquierda">
-            <textarea type="text" id="valorUsuario" class="container__izquierda__text" placeholder="Ingrese el texto aqui" rows="10" cols="50">
+            <textarea name="textarea" id="valorUsuario" class="container__izquierda__text" placeholder="Ingrese el texto aqui" value="" rows="10" cols="50">
             </textarea>
             <div class="container__izquierda__buttons">
                 <button onclick="encriptar();" class="container__izquierda__button__encriptar" >
@@ -28,7 +28,7 @@
                 </p>
             </div>
             <div class="container__derecha__button" >
-                <button onclick="copiar();" class="boton__derecha__copiar" >Copiar</button>
+                <button onclick="copiar();" class="container__derecha__button__copiar" id="botonCopiar">Copiar</button>
             </div>
         </section>
     </main>
